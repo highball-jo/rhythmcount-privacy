@@ -15,10 +15,12 @@
 </head>
 <body>
 <h1>RhythmCount: Rep Counter — Privacy Policy</h1>
-<p class="updated">Last updated: August 11, 2026</p>
+<p class="updated">Last updated: August 29, 2026</p>
 
 <p>RhythmCount ("the app") is developed by JoCoding, Inc. This policy explains what
-data the app handles and what never leaves your device.</p>
+data the app handles and what never leaves your device. It applies to the app on
+both <strong>iOS</strong> and <strong>Android</strong>; where the two platforms
+differ, the difference is called out below.</p>
 
 <h2>Camera and motion data stay on your device</h2>
 <p>RhythmCount uses your device's camera to detect body pose landmarks and count
@@ -32,9 +34,10 @@ we cannot see it.</p>
 third-party SDKs process limited data for those features:</p>
 <ul>
   <li><strong>Google AdMob</strong> (advertising) — may collect device
-  identifiers (such as the advertising identifier, with your permission via the
-  App Tracking Transparency prompt), IP address, and ad-interaction data to serve
-  and measure ads. See
+  identifiers (the advertising identifier), IP address, and ad-interaction data to
+  serve and measure ads. On iOS the identifier is used only if you allow it at the
+  App Tracking Transparency prompt; on Android it is the Google Advertising ID,
+  which you can reset or delete at any time in Settings. See
   <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
   In regions where required, a consent form (Google UMP) is shown before ads are
   initialized, and you can decline personalized ads.</li>
@@ -42,6 +45,11 @@ third-party SDKs process limited data for those features:</p>
   identifiers and purchase history to deliver and restore the one-time
   "Unlimited Rounds" purchase. See
   <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</li>
+  <li><strong>Google MediaPipe</strong> (on-device pose detection) — the pose
+  detection library bundles Google's diagnostics component, which reports
+  technical information about the library itself: that inference ran, which model
+  was used, and how it performed. It carries <strong>no image and no pose data</strong>.
+  See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
 </ul>
 
 <h2>What we do not collect</h2>
@@ -53,9 +61,22 @@ third-party SDKs process limited data for those features:</p>
 </ul>
 
 <h2>Tracking</h2>
-<p>With your permission (iOS App Tracking Transparency), the advertising SDK may
-use your device's advertising identifier to deliver personalized ads. If you
-decline, ads are still shown but are not personalized using that identifier.</p>
+<p>The advertising SDK may use your device's advertising identifier to deliver
+personalized ads. On iOS this happens only with your permission at the App
+Tracking Transparency prompt. On Android, and in regions where consent is
+required, a consent form (Google UMP) is shown before ads are initialized. In
+either case you can decline: ads are still shown, but are not personalized using
+that identifier.</p>
+
+<h2>Requesting deletion of your data</h2>
+<p>The app has no accounts and we operate no servers, so there is no profile of
+you for us to hold or delete. Your rep counts and settings live only on your
+device and are removed when you uninstall the app.</p>
+<p>For the limited data the third parties above receive, you can email
+<a href="mailto:highball@jocoding.net">highball@jocoding.net</a> and we will pass
+your deletion request on to them. You can also reset or delete your advertising
+identifier yourself at any time in your device settings, which stops it being
+used to link past ad activity to you.</p>
 
 <h2>Children</h2>
 <p>The app is not directed at children and does not knowingly collect personal
