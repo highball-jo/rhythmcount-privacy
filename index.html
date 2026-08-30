@@ -2,91 +2,46 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>RhythmCount — Privacy Policy</title>
+
+<!--
+  This page is a redirect, not a policy.
+
+  RhythmCount's privacy policy is maintained in exactly one place:
+  https://rhythmcount.jocoding.io/privacy — the canonical host, the one the App
+  Store listing points at, and the one on the domain that serves app-ads.txt.
+
+  This URL exists because the Google Play listing and its Data Safety
+  deletion-request link were set to it before the canonical page covered
+  Android. Both copies were accurate at that moment, which is exactly the
+  situation that rots: two true documents drift into one true and one stale.
+  Redirecting keeps every published URL working while leaving a single source
+  of truth to maintain.
+
+  The fragment survives: browsers carry #delete-data over to a target that
+  specifies none, and the canonical page has a matching id="delete-data", so
+  the Data Safety deletion link still lands on its section.
+-->
+
+<link rel="canonical" href="https://rhythmcount.jocoding.io/privacy">
+<meta http-equiv="refresh" content="0; url=https://rhythmcount.jocoding.io/privacy">
+<script>
+  // Belt and braces: carry the fragment explicitly, so the deletion link lands
+  // on its section even if a client drops it across the meta refresh.
+  location.replace("https://rhythmcount.jocoding.io/privacy" + (location.hash || ""));
+</script>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-         max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; line-height: 1.6; color: #1d1d1f; }
-  h1 { font-size: 1.7rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
-  p, li { font-size: 0.98rem; }
-  .updated { color: #6e6e73; font-size: 0.9rem; }
-  @media (prefers-color-scheme: dark) { body { background: #111; color: #eee; } .updated { color: #9a9aa0; } }
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       max-width:40rem;margin:0 auto;padding:3rem 1.25rem;line-height:1.6;color:#111}
+  a{color:#0026FC}
+  @media(prefers-color-scheme:dark){body{background:#0d0d10;color:#ececf1}a{color:#7d92ff}}
 </style>
 </head>
 <body>
-<h1>RhythmCount: Rep Counter — Privacy Policy</h1>
-<p class="updated">Last updated: August 29, 2026</p>
-
-<p>RhythmCount ("the app") is developed by JoCoding, Inc. This policy explains what
-data the app handles and what never leaves your device. It applies to the app on
-both <strong>iOS</strong> and <strong>Android</strong>; where the two platforms
-differ, the difference is called out below.</p>
-
-<h2>Camera and motion data stay on your device</h2>
-<p>RhythmCount uses your device's camera to detect body pose landmarks and count
-repetitions. All camera frames and pose data are processed <strong>entirely
-on-device</strong>. The app does not record, store, or transmit any images, video,
-or pose data. Nothing you do in front of the camera ever leaves your device, and
-we cannot see it.</p>
-
-<h2>Data collected by third-party services</h2>
-<p>The app shows ads and offers an optional one-time purchase. The following
-third-party SDKs process limited data for those features:</p>
-<ul>
-  <li><strong>Google AdMob</strong> (advertising) — may collect device
-  identifiers (the advertising identifier), IP address, and ad-interaction data to
-  serve and measure ads. On iOS the identifier is used only if you allow it at the
-  App Tracking Transparency prompt; on Android it is the Google Advertising ID,
-  which you can reset or delete at any time in Settings. See
-  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
-  In regions where required, a consent form (Google UMP) is shown before ads are
-  initialized, and you can decline personalized ads.</li>
-  <li><strong>RevenueCat</strong> (purchases) — processes anonymous app-user
-  identifiers and purchase history to deliver and restore the one-time
-  "Unlimited Rounds" purchase. See
-  <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</li>
-  <li><strong>Google MediaPipe</strong> (on-device pose detection) — the pose
-  detection library bundles Google's diagnostics component, which reports
-  technical information about the library itself: that inference ran, which model
-  was used, and how it performed. It carries <strong>no image and no pose data</strong>.
-  See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
-</ul>
-
-<h2>What we do not collect</h2>
-<ul>
-  <li>No account or sign-up is required; we collect no names, emails, or contacts.</li>
-  <li>No camera images, video, or pose/motion data are collected.</li>
-  <li>No precise location data is collected.</li>
-  <li>Your rep counts and settings are stored only on your device.</li>
-</ul>
-
-<h2>Tracking</h2>
-<p>The advertising SDK may use your device's advertising identifier to deliver
-personalized ads. On iOS this happens only with your permission at the App
-Tracking Transparency prompt. On Android, and in regions where consent is
-required, a consent form (Google UMP) is shown before ads are initialized. In
-either case you can decline: ads are still shown, but are not personalized using
-that identifier.</p>
-
-<h2 id="delete-data">Requesting deletion of your data</h2>
-<p>The app has no accounts and we operate no servers, so there is no profile of
-you for us to hold or delete. Your rep counts and settings live only on your
-device and are removed when you uninstall the app.</p>
-<p>For the limited data the third parties above receive, you can email
-<a href="mailto:highball@jocoding.net">highball@jocoding.net</a> and we will pass
-your deletion request on to them. You can also reset or delete your advertising
-identifier yourself at any time in your device settings, which stops it being
-used to link past ad activity to you.</p>
-
-<h2>Children</h2>
-<p>The app is not directed at children and does not knowingly collect personal
-information from children.</p>
-
-<h2>Changes</h2>
-<p>If this policy changes, the updated version will be posted at this page with a
-new "Last updated" date.</p>
-
-<h2>Contact</h2>
-<p>Questions about privacy: <a href="mailto:highball@jocoding.net">highball@jocoding.net</a></p>
+<h1>RhythmCount — Privacy Policy</h1>
+<p>This policy has moved to
+<a href="https://rhythmcount.jocoding.io/privacy">rhythmcount.jocoding.io/privacy</a>.</p>
+<p>You should be redirected automatically. If not, follow the link above.</p>
 </body>
 </html>
